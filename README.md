@@ -1,2 +1,2 @@
-# friend-site
-a repo for website of friend
+# Web-Basics
+Repo for basic web understanding..
