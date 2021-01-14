@@ -1,0 +1,12 @@
+1: page structure.
+2: tags:
+    head tag
+    body tag
+    : p(paragraph)
+    - div & span
+    - img(image), video, audio
+    - table(tbody, thead, td, tr, th)
+    - a(link)
+    - section, header & footer, article
+    - aside
+    - 
