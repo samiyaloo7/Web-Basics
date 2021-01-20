@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 /* @import url('fonts.css'); */
+html {
+  scroll-behavior: smooth;
+}
 a:hover, .ncdetailsbox > a {
   color: #f49239;
 }
@@ -10,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Poppins;
+  overflow-x: hidden;
 }
 .main-container {
   max-width: 1920px;
@@ -141,6 +145,7 @@ header{
   }
   .so-icon > a > i {
     color: black;
+    margin-top: 1vh;
   }
   .so-icon:hover > a > i {
     color: white;
@@ -149,7 +154,11 @@ header{
     background-color: #3e3e72;
     box-shadow: 0px 0px 2px 3px white , 0px 0px 2px 6px #3e3e72;
   }
-  .so-icons { display: inline-block; margin-left: 10px;}
+  .so-icons { 
+		display: inline-block; 
+		margin-left: 10px;
+		text-align: center;
+	}
 /* top header */
 
 /* header text */
@@ -198,6 +207,7 @@ header{
   }
   .btn-touch, .btn-vid {
     border: 0;
+	cursor: pointer;
   }
   .header-buttons {
     text-align: center;
@@ -559,8 +569,8 @@ header{
   font-weight: 300;
 }
 .t-img {
-  border-radius: 150px;
-  border: 10px solid #e3e3e3;
+  border-radius: 150px !important;
+  border: .5em solid #e3e3e3  !important;
 }
 .t-bottom p {
   font-size: 15px;
@@ -777,9 +787,12 @@ header{
   box-shadow: -0.326px 0.946px 8px rgba(232,235,234,0.53);
   background-color: #ffffff;
 }
-.newscard:nth-child(2) {
+.newscard:hover {
   filter: drop-shadow(3.661px 41.84px 27px rgba(241,241,241,0.91));
 }
+/* .newscard:nth-child(2) {
+  filter: drop-shadow(3.661px 41.84px 27px rgba(241,241,241,0.91));
+} */
 .news-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -921,6 +934,11 @@ p.fb-ttl {
   background-color: #2f2f2f;
   border: 0;
   margin-bottom: 25px;
+	box-sizing: border-box;
+  color: white;
+	padding-left: 13px;
+	color: white;
+	box-sizing: border-box;
 }
 .bottom-btn {
   width: 144px;
@@ -935,6 +953,10 @@ p.fb-ttl {
   color: #ffffff;
   font-weight: 400;
   font-family: "Montserrat";
+}
+.bottom-btn:hover {
+	cursor: pointer;
+	box-shadow: 0 2px 5px #f2f3f2;
 }
 
 .bso-links {
@@ -966,10 +988,111 @@ p.fb-ttl {
   background-color: #3e3e72;
   box-shadow: 0px 0px 2px 3px white , 0px 0px 2px 6px #3e3e72;
 }
-.bso-icons { display: inline-block; margin-left: 10px;}
+.bso-icons { 
+	display: inline-block; 
+	margin-left: 10px;
+	text-align: center;
+}
 /* footer section */
 
 /*  */
 .only-mob {
   display: none;
+}
+input:focus, button:focus, a:focus {
+	outline: none !important;
+}
+button:hover {
+	cursor: pointer;
+}
+.bso-icon > a > i {
+	color: black;
+	font-size: 1.2rem;
+	letter-spacing: 0px;
+	line-height: 0px;
+	color: #232323;
+	/*transform: translateX(-50%);
+	margin: 50% 50%;*/
+	transform: translateY(-50%);
+  margin: 50% 0px 0px 0px;
+}
+
+/* bottom so icons */
+
+/*.bso-icon:nth-child(1):hover > a > i {
+  color: white;
+}*/
+.bso-icon:hover > a > i {
+  color: white;
+}
+
+span.bso-icon:nth-child(1):hover, span.so-icon:nth-child(4):hover{
+  background: #ec1a23;
+}
+span.bso-icon:nth-child(2):hover {
+  background: #41b1db;
+}
+span.bso-icon:nth-child(3):hover, span.so-icon:nth-child(1):hover  {
+  background: #1877f2;
+}
+span.bso-icon:nth-child(4):hover, span.so-icon:nth-child(3):hover {
+  background: #00abec;
+}
+span.bso-icon:nth-child(5):hover {
+  background: #f8991b;
+}
+span.so-icon:nth-child(2):hover{
+  background: #0076b4;
+}
+/*#0076b4 linkedin*/
+/* bottom so icons */
+
+.bso-icon, .so-icon  {
+	cursor: pointer;
+	padding: 0px;
+}
+
+#slider_box > div {
+  padding: 5px;
+  margin: 3px;
+  border: 2px solid #333;
+}
+/* .owl-dots {
+  text-align: center;
+  margin: 100px 0 0 0;
+} */
+.owl-dots {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+.owl-carousel button.owl-dot {
+  width: 11px;
+  height: 11px;
+  background-color: #ccc !important;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 7px;
+}
+.owl-carousel button.owl-dot.active { 
+  background: #256d98 !important;
+}
+.owl-carousel .owl-item img {
+  display: inline-block !important;
+  /* width: 6vw !important; */
+  /* height: 6vw !important; */
+}
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+.testimonial-sec > .container {
+  margin-bottom: 0px;
+  overflow-x: hidden;
+  width: 90vw;
+  max-width: 1133px;
+}
+.testimonial-sec {
+  padding-bottom: 0px;
+}
+.testimonial-container {
+  margin-bottom: 100px;
 }

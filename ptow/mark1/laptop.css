@@ -1,0 +1,180 @@
+/*@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) { */
+@media screen and (min-device-width: 769px)  and (max-device-width: 1919px) {
+    body {
+        overflow-x: hidden;
+    }
+    .only-mob {
+        display: none;
+    }
+    .second-sec, .price-sec, .testimonial-sec, .service-sec, .imgs-sec, .startups-sec, .news-sec, footer, header {
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    .testimonial-card {
+        width: auto;
+        max-width: 370px;
+        padding: 30px;
+    }
+    .container {
+        width: 98vw;
+    }
+    footer > .container, .brands-sec, .service-sec > .container  {
+        width: 90vw;
+    }
+    .i-container {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .brands-sec {
+        text-align: center;
+        padding: 100px 10px;
+    }
+    .brands-sec > img {
+        width: 80vw;
+    }
+    .hcontainer {
+        width: 100vw;
+    }
+    .big-text {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+    .small-text {
+        font-size: 14px;
+    }
+    .mail-img {
+        left: -525px;
+    }
+    .sec-content {
+        padding-left: 100px;
+    }
+    .mail-sec {
+        width: 100vw;
+    }
+    .top-header {
+        width: 90vw;
+        max-width: 1133px;
+    }
+    .top-links {
+        margin-left: 40px;
+    }
+    .link {
+        margin-right: 7px;
+        font-size: 12px;
+    }
+    .card-item-dec {
+        width: 15vw;
+        margin-left: 15px;
+    }
+    .startups-sec > .container > div {
+        margin-left: 50px;
+    }
+    .sbtnbox {
+        right: 50px;
+    }
+    .newscard {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .news-container {
+        width: 90vw;
+        max-width: 1133px;
+    }
+    .ncdetailsbox {
+        padding-left: 20px;
+    }
+    p.fb-ttl {
+        font-size: 18px;
+    }
+    .flinks-box {
+        grid-gap: 10px;
+    }
+    .emailtext {
+        width: 30vw;
+    }
+    .img-content > img {
+        height: 50vh;
+        width: 30vw;
+        /* transform: translateY(50%); */
+    }
+    .sscard {
+        width: 20vw;
+        max-width: 256px;
+        height: auto;
+        padding: 10px;
+    }
+    .so-text {font-size: 12px;}
+    .so-links {right: -15px;}
+    
+    .t-img {
+        width: 6vw  !important;
+        height: 6vw  !important;
+    }
+    .t-bottom > div {
+        /* top: 0px; */
+        right: 0px;
+    }
+    .card-item-ttl {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .mi-dec {
+        width: 50%;
+        margin-left: 48%;
+        /* margin-top: 100px; */
+    }
+    .bso-icon {
+        height: 4vw;
+        width: 4vw;
+        margin: 0 3px;
+        padding: 3px 9px;
+    }
+    .sscard-ttl {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .startups-sec > .container > div {
+        width: 60vw;
+    }
+    /**/
+    
+    .bso-icon {
+        height: 4vw;
+        width: 4vw;
+        margin: 0 3px;
+        box-sizing: border-box;
+        padding: 0;
+        border-radius: 3vw;
+    }
+    /**/
+    .testimonial-card > .t-top {
+        font-size: 1.25rem;
+    }
+    .t-bottom  p {
+        /* margin-left: 20px; */
+        font-size: .8em;
+    }
+    .t-bottom span {
+        font-size: .7em;
+    }
+    .t-bottom {
+        margin-top: 3vh;
+    }
+    .owl-dots {
+        margin-top: 30vh;
+    }
+}
+@media screen and (min-device-width: 1919px)  {
+    .owl-carousel .owl-item img {
+        display: inline-block !important;
+        width: 6vw !important; 
+        height: 6vw !important;
+    }
+    .t-bottom > div {
+        right: 0px;
+    }
+    .owl-dots {
+        margin-top: 15vh;
+    } 
+}

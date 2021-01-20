@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media screen and (max-device-width: 768px) {
     .top-links, .so-links {
         display: none;
     }
@@ -55,7 +55,7 @@
     .mail-sec {
         width: 100vw;
         height: auto;
-        overflow-y: visible;
+        overflow-y: hidden;
         overflow-x: hidden;
         padding: 40px 0;
     }
@@ -68,7 +68,7 @@
         height: 60vh;
     }
     .mail-sec > .container {
-        margin-top: 50%;
+        margin-top: 45%;
     }
     .mi-dec {
         width: 100%;
@@ -108,7 +108,8 @@
         position: relative;
         display: inline-block;
         top: 0;
-        right: 0;
+        /* right: 0; */
+        right: 21px;
         margin-left: 5vw;
     }
     .t-bottom {
@@ -116,8 +117,8 @@
         transform: translateY(15%);
     }
     .t-img {
-        height: 20vw;
-        width: 20vw;
+        height: 20vw  !important;
+        width: 20vw !important;
     }
     /**/
     .sscard {
@@ -364,4 +365,10 @@
         margin-top: 0px;
     }
      /* side panel */
+     .testimonial-card > .t-top {
+        font-size: 1rem;
+    }
+    .owl-dots {
+        margin: 10px 0 0 0;
+    }
 }
